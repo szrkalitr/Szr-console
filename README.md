@@ -14,7 +14,7 @@ SZR Console, Metasploit Framework'ü web arayüzü üzerinden daha rahat yönete
 - Modüler dosya yapısı
 
 📁 Proje Yapısı
-
+'''
 szr-console/
 ├── app.py
 ├── api.py
@@ -26,22 +26,23 @@ szr-console/
 ├── utils.py
 ├── templates/
 └── requirements.txt
-
+'''
 ⚙️ Kurulum
 
 Projeyi klonlayın:
-
-git clone <repo-link>
-cd szr-console
-
+bash '''
+git clone https://github.com/szrkalitr/Szr-console
+cd Szr-onsole
+unzip szr-console.zip
+'''
 Gerekli paketleri yükleyin:
-
+'''
 pip install -r requirements.txt
-
+'''
 Uygulamayı başlatın:
-
+''"
 python app.py
-
+'''
 Daha sonra tarayıcıdan:
 
 http://127.0.0.1:5000
