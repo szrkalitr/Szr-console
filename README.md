@@ -32,10 +32,6 @@ szr-console/
 ├── utils.py               # Yardımcı fonksiyonlar
 │
 ├── templates/             # HTML sayfaları
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── img/
 │
 ├── requirements.txt
 └── README.md
