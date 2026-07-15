@@ -1,70 +1,116 @@
-🚀 SZR Console
+# 🚀 SZR Console
 
-SZR Console, Metasploit Framework'ü web arayüzü üzerinden daha rahat yönetebilmek için geliştirdiğim basit ve hafif bir projedir. Amaç, sürekli terminal ile uğraşmadan oturumları, komutları ve çıktıları tek bir panel üzerinden takip edebilmek.
+SZR Console, **Metasploit Framework** için geliştirilmiş web tabanlı bir yönetim panelidir. Terminal kullanımını daha pratik hale getirmek amacıyla geliştirilmiştir. Gerçek zamanlı terminal çıktıları, oturum yönetimi ve modern arayüzü sayesinde Metasploit'i tek panel üzerinden yönetebilirsiniz.
 
-✨ Özellikler
+---
 
-- Web tabanlı Metasploit yönetimi
-- Gerçek zamanlı terminal çıktıları (Socket.IO)
-- MSF Console entegrasyonu
-- Session görüntüleme ve yönetimi
-- SQLite veritabanı desteği
-- Flask tabanlı hafif yapı
-- Karanlık tema arayüzü
-- Modüler dosya yapısı
+## ✨ Özellikler
 
-📁 Proje Yapısı
-'''
+- 🌐 Web tabanlı Metasploit yönetimi
+- 💻 Gerçek zamanlı terminal
+- 📡 Socket.IO desteği
+- 📂 Session yönetimi
+- 🗄️ SQLite veritabanı
+- 🌙 Modern karanlık tema
+- ⚡ Hızlı ve hafif yapı
+- 🧩 Modüler proje mimarisi
+
+---
+
+## 📂 Proje Yapısı
+
+```text
 szr-console/
-├── app.py
-├── api.py
-├── socket_events.py
-├── rpc_client.py
-├── msf_console_manager.py
-├── database.py
-├── config.py
-├── utils.py
-├── templates/
-└── requirements.txt
-'''
-⚙️ Kurulum
+│
+├── app.py                 # Ana uygulama
+├── config.py              # Yapılandırma
+├── database.py            # SQLite işlemleri
+├── rpc_client.py          # MSF RPC bağlantısı
+├── msf_console_manager.py # Konsol yönetimi
+├── socket_events.py       # Socket.IO olayları
+├── api.py                 # API endpointleri
+├── utils.py               # Yardımcı fonksiyonlar
+│
+├── templates/             # HTML sayfaları
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── img/
+│
+├── requirements.txt
+└── README.md
+```
 
-Projeyi klonlayın:
-bash '''
-git clone https://github.com/szrkalitr/Szr-console
-cd Szr-onsole
+---
+
+## 🎯 Amaç
+
+Bu proje, Metasploit Framework ile çalışırken sürekli terminal kullanma ihtiyacını azaltmak için geliştirildi.
+
+Hedefi;
+
+- Daha düzenli bir çalışma ortamı sunmak
+- Konsol çıktısını anlık takip etmek
+- Session yönetimini kolaylaştırmak
+- Tek panel üzerinden hızlı kontrol sağlamaktır.
+
+---
+
+## ⚙️ Kurulum
+
+Projeyi klonlayın.
+
+```bash
+git clone https://github.com/KULLANICI/szr-console.git
+cd szr-console
 unzip szr-console.zip
-'''
-Gerekli paketleri yükleyin:
-'''
+```
+
+Bağımlılıkları yükleyin.
+
+```bash
 pip install -r requirements.txt
-'''
-Uygulamayı başlatın:
-''"
+```
+
+
+Projeyi çalıştırın.
+
+```bash
 python app.py
-'''
-Daha sonra tarayıcıdan:
+```
 
+Tarayıcıdan giriş yapın.
+
+```text
 http://127.0.0.1:5000
+```
 
-adresine giderek arayüzü kullanabilirsiniz.
+---
 
-🛠️ Kullanılan Teknolojiler
+## 🛠️ Kullanılan Teknolojiler
 
 - Python
 - Flask
 - Flask-SocketIO
 - SQLite
-- HTML / CSS / JavaScript
+- HTML5
+- CSS3
+- JavaScript
 
-📌 Not
+---
 
-Bu proje tamamen öğrenme ve geliştirme amacıyla ortaya çıktı. Zamanla yeni özellikler, hata düzeltmeleri ve performans iyileştirmeleri eklemeye devam edeceğim.
+## 📌 Durum
 
-Kodlar mükemmel olmayabilir ama sürekli gelişiyor. Öneri ve katkılara her zaman açığım.
+Proje aktif olarak geliştirilmektedir.
 
-⭐ Destek
+Yeni özellikler, performans iyileştirmeleri ve hata düzeltmeleri düzenli olarak eklenmektedir.
 
-Projeyi beğendiysen yıldız bırakmayı unutma. Geri bildirimler projeyi geliştirmeme gerçekten yardımcı oluyor.
+---
 
-İyi kullanımlar! ☕
+## 🤝 Katkı
+
+Hata bildirimi, öneri veya geliştirme fikirlerine her zaman açığım.
+
+Projeyi beğendiysen ⭐ bırakmayı unutma.
+
+---
